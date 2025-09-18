@@ -20,6 +20,7 @@
     "npm": ">=8.0.0"
   },
   "dependencies": {
+    "module-alias": "^2.2.3",
     "@hookform/resolvers": "^3.10.0",
     "@jridgewell/trace-mapping": "^0.3.25",
     "@neondatabase/serverless": "^0.10.4",
@@ -117,5 +118,8 @@
   },
   "optionalDependencies": {
     "bufferutil": "^4.0.8"
-  }
+  },
+"_moduleAliases": {
+  "@shared": "./dist/server/shared"
+ }
 }
