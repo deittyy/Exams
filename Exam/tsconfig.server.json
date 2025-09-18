@@ -1,5 +1,4 @@
 {
-  "extends": "./tsconfig.json",
   "compilerOptions": {
     "outDir": "./dist/server",
     "rootDir": "./server",
@@ -12,7 +11,13 @@
     "strict": true,
     "noEmit": false,
     "declaration": false,
-    "sourceMap": false
+    "sourceMap": false,
+    "lib": ["esnext"],
+    "baseUrl": ".",
+    "types": ["node"],
+    "paths": {
+      "@shared/*": ["./shared/*"]
+    }
   },
   "include": [
     "server/**/*",
