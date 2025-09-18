@@ -3,6 +3,7 @@ services:
     name: cs-unification-examtest
     env: node
     region: oregon
+    rootDir: .
     buildCommand: npm install && npm run build && npm run db:push
     startCommand: npm start
     envVars:
